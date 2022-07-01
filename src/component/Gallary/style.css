@@ -1,0 +1,120 @@
+
+:root{
+  --mainColor : hsl(26, 100%, 55%);
+  --accentColor : hsl(25, 100%, 94%);
+}
+/* 
+.container{
+  position: relative;
+  max-width: 900px;
+}
+
+.main-img img , .imgs img{
+  width: 100%;
+}
+
+.imgs{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+
+ */
+
+
+
+
+
+
+
+.carousel{
+  margin-top: 2rem;
+  width: 320px;
+
+  /* max-width: 100%; */
+}
+
+/* .popUp{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -55%);
+  width: 410px;
+} */
+
+
+
+.carousel-inner{
+  border-radius: 6px;
+} 
+  /* .imgC{
+  position: relative;
+  top: 25rem;
+  display: flex;
+}  
+  /* flex-direction: ;  */
+
+
+
+  @media (max-width: 991px) { 
+    .carousel{
+      width: 400px;
+      left: 1rem;
+      margin-top: 1rem;
+    }
+
+  }
+
+.indicators{
+  position: relative;
+  top: .4rem;
+  display: flex;
+  justify-content: space-between;
+    width: 95%;
+    margin: 0 ;
+    /* display: flex; */
+}
+
+.control{
+  display: none;
+}
+
+.indicators .smImgs{
+  display: block;
+  width: 50px;
+  border:2px solid var(--mainColor) ;
+  border-radius: 5px;
+}
+
+
+
+@media (max-width: 760px) { 
+  .carousel{
+    width: 350px;
+    left: 0;
+  }
+  .indicators{
+    display: none;
+  }
+
+  .indicators .smImgs{
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+.controls{
+  display: block;
+  width: 15px;
+}
+
+.svg{
+  display: block;
+  padding: 3px 0;
+  border-radius: 6px;
+  background: white;
+  filter: invert(-235%) brightness(-57%);
+}
+
+}
